@@ -1,0 +1,15 @@
+.navbar-style {
+  justify-content: space-between;
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(176,176,176,1) 100%, rgba(255,255,255,1) 100%);
+  font-weight: 500;
+}
+
+.navbar-style .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-style .navbar-brand img {
+  width: 150px;
+}
+

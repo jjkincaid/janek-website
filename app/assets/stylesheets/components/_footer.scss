@@ -1,0 +1,27 @@
+html {
+  position: relative;
+  min-height: 100%;
+  padding-bottom:50px;
+}
+body {
+  margin-bottom: 50px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+
+.footer-info p {
+  line-height: .5cm;
+  font-size: smaller;
+}
+
+.footer-info h6 {
+  line-height: .5cm;
+  font-size: smaller;
+  margin-bottom: 0%;
+}

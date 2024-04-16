@@ -1,1 +1,56 @@
-<h1>Contact us</h1>
+<body class="bg-city">
+
+<div class="container" style="padding-top: 100px">
+<div class="row">
+<div class="col-6">
+   <h2 class="title">Contact Us</h2>
+      <div class="contact-form border border-secondary">
+       <form method="post" action="/contacts/send_mail" class="button_to">
+           <div class="mb-3">
+            <label for="fullname" class="form-label">Full Name</label>
+            <input type="name" class="form-control" placeholder="Name", name="mail[name]" required>
+          </div>
+          <div class="mb-3">
+            <label for="phone-number" class="form-label">Phone</label>
+            <input type="phone" name="mail[phone]" class="form-control" placeholder="Phone" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" name="mail[email]" class="form-control" placeholder="Email" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Questions/Comments?</label>
+            <textarea class="form-control" name="mail[comment]" rows="5" placeholder="Tell us how we can help" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-secondary btn-style">Submit</button>
+          <input name="authenticity_token" type="hidden" value="10f2163b45388899ad4d5ae948988266befcb6c3d1b2451cf657a0c293d605a6"/>
+        </form>
+      </div>
+      </div>
+
+      <div class="col-6">
+
+        <h2 class="title">Directory</h2>
+
+        <div class="contact-info border border-secondary">
+        <h4>Bryant Kincaid</h4>
+        <h5>General Manager</h5>
+        <h5><%= mail_to 'bryant@janekservices.com' %></h5>
+        </div>
+
+        <div class="contact-info border border-secondary">
+        <h4>Heath Cox</h5>
+        <h5>Director of Business Development</h5>
+        <h5><%= mail_to 'heath@janekservices.com' %></h5>
+        </div>
+
+        <div class="contact-info border border-secondary">
+        <h4>Donna Stacy</h4>
+        <h5>HR Director</h5>
+        <h5><%= mail_to 'donna@janekservices.com' %></h5>
+        </div>
+      </div>
+  </div>
+</div>
+
+</body>
