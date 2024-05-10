@@ -29,9 +29,7 @@ gem "jbuilder"
 
 gem "cloudinary"
 
-gem "font-awesome-sass", "~> 6.1"
-
-
+gem "jsbundling-rails"
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
@@ -51,9 +49,9 @@ gem "bootsnap", require: false
 # Use Sass to process CSS
 gem "sassc-rails"
 
-#gem 'bootstrap', '~> 5.3.2'
+gem 'bootstrap', '~> 5.3.2'
 
-
+gem "font-awesome-sass", "~> 6.1"
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
