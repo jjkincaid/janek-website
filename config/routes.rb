@@ -11,6 +11,9 @@ Rails.application.routes.draw do
   get "/contact", to: "pages#contact"
 
   get "/contact_form", to: "contact_form#new"
-  resources :contact_form, only: %i[new create]
+    resources :contact_form, only: %i[new create]
+
+  get "/job_application", to: "job_application#new"
+    resources :job_application, only: %i[new create]
 
 end
